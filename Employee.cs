@@ -1,6 +1,7 @@
 ﻿namespace EmployeeApp
 {
-    partial class Employee
+    //Partial keyword prevent direct instantiation of the Employee class
+    abstract partial class Employee
     {
         // Field data.
         private string _empName;
@@ -94,7 +95,7 @@
                 _ => Pay += 0
             };
         }
-        public void DisplayStats()
+        public virtual void DisplayStats()
         {
             Console.WriteLine("Name: {0}", _empName);
             Console.WriteLine("ID: {0}", _empId);

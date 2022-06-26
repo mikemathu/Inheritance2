@@ -7,22 +7,22 @@ namespace EmployeeApp
     {
         public int StockOptions { get; set; }
 
-        /*  public Manager(string fullName, int age, int empId,
-                  float currPay, string ssn, int numbOfOpts)
-                  :base (fullName, age, empId, currPay, ssn,
-                          EmployeePayTypeEnum.Salaried)
-          {
-              // This property is defined by the Manager class.
-              StockOptions = numbOfOpts;
-          }*/
-
+        // Add back the defaultctor
+        public Manager() { }
         public Manager(string fullName, int age, int empId,
             float currPay, string ssn, int numbOfOpts)
             : base(fullName, age, empId, currPay, ssn, EmployeePayTypeEnum.Salaried)
         {
             // This property is defined by the Manager class.
             StockOptions = numbOfOpts;
- 
+
         }
+
+       
+
+
     }
+
+
+
 }

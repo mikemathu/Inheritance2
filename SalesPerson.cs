@@ -6,7 +6,8 @@ namespace EmployeeApp
     {
         public int SalesNumber { get; set; }
 
-
+        // Add back the defaultctor
+        public SalesPerson() { }
         // As a general rule, all subclasses should explicitly call an appropriate
         // base class constructor.
         public SalesPerson(string fullName, int age, int empId,
