@@ -7,7 +7,7 @@ namespace Test
     public interface ICloneable
     {
 
-        ArrayList strArray = new ArrayList();
+        //ArrayList strArray = new ArrayList();
 
 }
 }
